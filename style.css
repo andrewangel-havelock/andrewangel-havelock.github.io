@@ -1,0 +1,279 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+}.app-container {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    gap: 10px;
+}.header {
+    padding: 20px;
+    padding-bottom: 20px;
+    background-color: #1c2c50;
+}.header h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.5px;
+}.logo {
+    width: 150px;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#date {
+    text-align: right;
+    border: none;
+    margin-top: -40.8px;
+}
+
+section {
+    padding: 0px 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+/* Focus Harvest Section */.focus-harvest {
+    display: block-inline;
+}.highlight {
+    background-color: #334155;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-weight: 500;
+    text-align: center;
+}.harvest-list {
+    list-style: none;
+}.harvest-list li {
+    color: #94a3b8;
+    padding: 8px 0;
+    font-size: 0.925rem;
+}
+
+/* Headers */
+h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 8px;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}.table-wrapper {
+    overflow-x: auto;
+    margin: 0 -24px;
+    padding: 0 24px;
+    max-height: 250px;
+    /* Shows ~5 rows */
+    overflow-y: auto;
+}
+
+/* Ensure consistent row height */
+tr {
+    background-color: #334155;
+    height: 65px;
+    box-sizing: border-box;
+}
+
+tr.completed {
+    opacity: 0.5!important;
+    background-color: #1e293b!important;
+    transform: scale(0.98)!important;
+    text-decoration: line-through!important;
+}
+
+tr.next-trip {
+    background-color: #475569;
+    transform: scale(1.01);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+tr.past-due {
+    background-color: #7f1d1d;
+    animation: pulseWarning 1.5s infinite;
+}
+
+tr.past-due tr::after {
+    color: #fca5a5;
+    font-size: 0.75rem;
+    font-weight: bold;
+    float: right;
+}
+
+@keyframes pulseWarning {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+tr {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+tr:hover:not(.completed) {
+    filter: brightness(1.1);
+}
+
+td {
+    padding: 8px 16px;
+    vertical-align: middle;
+}
+
+tr td:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+tr td:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}.time-col {
+    width: 30px;
+    white-space: nowrap;
+    font-family: 'SF Mono', 'Roboto Mono', monospace;
+    font-weight: 600;
+    font-size: 1rem;
+}.time-top,.time-bottom {
+    display: block;
+    line-height: 1.2;
+}.driver-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 4px;
+}.driver-name {
+    font-weight: 600;
+    color: #e2e8f0;
+    font-size: 17px;
+
+}.driver-goods {
+    color: #94a3b8;
+    font-size: 0.875rem;
+}.quantity-shipper {
+    text-align: right;
+    white-space: nowrap;
+    justify-content: center;
+    width: 80px;
+}.quantity-shipper-top {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 4px;
+}.shipper {
+    color: #94a3b8;
+    font-size: 0.875rem;
+    display: block;
+    text-align: right;
+}
+
+/* ETAs Section */.etas-list {
+    display: grid;
+    gap: 8px;
+}.eta-item {
+    background-color: #334155;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}.add-eta {
+    background-color: #3b82f6;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 0.925rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 150ms ease;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 100%;
+}.add-eta:hover {
+    background-color: #2563eb;
+}
+
+/* Requirements Section */.requirements-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin: 0 auto;
+}.trucking-today,.trucking-tomorrow {
+    background-color: #334155;
+    border-radius: 8px;
+    padding: 10px;
+}.trucking h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #e2e8f0;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}.trucking-today li,.trucking-tomorrow li {
+    color: #94a3b8;
+    padding: 8px 8px;
+    font-size: 0.925rem;
+    background-color: #1e293b;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    text-align: center;
+    list-style: none;
+}
+
+/* Media Queries */
+@media (max-width: 640px) {
+    body {
+        padding: 0px;
+    }
+
+  .requirements-container {
+        gap: 8px;
+    }
+
+    td {
+        padding: 8px 12px;
+    }
+
+  .driver-name {
+        font-size: 1rem;
+    }
+
+  .driver-goods,
+  .shipper {
+        font-size: 0.7125rem;
+    }
+}

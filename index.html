@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Talley's Operations Dashboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+
+    <header class="header"> 
+      <img class="logo" src="img/talleys-logo.svg" alt="Talley's Logo">      
+    </header>
+
+    <section class="focus-harvest">
+      <div class="grading-focus">
+        <h2>Havelock Grading</h2>
+        <h2 id="date"></h2>
+        <div class="highlight">A/B/CH/C - Focus on B/C for HS yield</div>
+      </div>
+      <div class="harvesting">
+        <ul class="harvest-list">
+          <li>60 ex Sounds to HAV</li>
+          <li>52 ex Coro (HD:04/02) to HAV arriving THURSDAY AM</li>
+          <li>52 ex Coro (HD:05/02) to HAV arriving THURSDAY PM</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="loads">
+      <h2>Havelock Pickups</h2>
+      <div class="table-wrapper">
+        <table id="loads-table">
+          <tbody id="loads-table-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="unloads">
+      <h2>Havelock Dropoffs</h2>
+      <div class="table-wrapper">
+        <table id="unloads-table">
+          <tbody id="unloads-table-body"></tbody>
+        </table>
+      </div>
+    </section>
+      
+    <section class="trucking">
+      <h2>Load Requirements</h2>
+      <div class="requirements-container">
+        <div class="trucking-today">
+          <h3>Today:</h3>
+          <ul>
+            <li>BLN load: HS</li>
+            <li>BLN load: HS</li>
+          </ul>
+        </div>
+        <div class="trucking-tomorrow">
+          <h3>Tomorrow:</h3>
+          <ul>
+            <li>BLN load: HS / CV</li>
+            <li>MOT load: HS / MM</li>
+            <li>MOT load: HS / MM</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="etas">
+      <h2>Boat ETAs</h2>
+      <div class="etas-list" id="etas-list"></div>
+      <button class="add-eta">Add New ETA</button>
+    </section>
+      
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

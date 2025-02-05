@@ -1,0 +1,21 @@
+To-Do List
+
+1. Data Acquisition
+Automate scraping from emails
+Investigate file hosting options (e.g., OneDrive, Google Drive) or using Power Apps for data storage and retrieval.
+
+2.  Barcode Scanner Functionality
+Implement barcode scanner functionality for manual data transfer.
+Develop a feature to save scanned lists into a "truck load" format.
+
+3.  Information Enhancement
+Add extra information fields (e.g., "Jordy", "Motmusselops") to relevant data entries.
+Include grade requirements in truck information.
+
+4.  Data Analysis
+Compare chiller counts to truck loads to ensure accuracy and identify discrepancies.
+
+5.  Data Update Scheduling
+Implement different update schedules for different information:
+High Priority (ASAP updates): Grading, trucking, and harvest information.
+Normal Priority (after every shift): All other information.

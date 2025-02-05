@@ -1,0 +1,84 @@
+{
+  "Pickups": [
+    {
+      "driver": "JASON WHALE",
+      "load": "1",
+      "Uplift": "05:30",
+      "Offload": "06:30",
+      "Shipper": "TALLEYS BLENHEIM",
+      "Quantity": "32",
+      "Package": "Bag",
+      "Type": "CHILLED",
+      "Goods": "BAGS OF MUSSELS"
+    },
+    {
+      "driver": "STEVE BLAIR",
+      "load": "2",
+      "Uplift": "07:00",
+      "Offload": "10:00",
+      "Shipper": "TALLEYS MOTUEKA",
+      "Quantity": "30",
+      "Package": "Bag",
+      "Type": "CHILLED",
+      "Goods": "BAGS OF MUSSELS"
+    },
+    {
+      "driver": "STEVE BLAIR",
+      "load": "2",
+      "Uplift": "07:00",
+      "Offload": "10:00",
+      "Shipper": "TALLEYS MOTUEKA",
+      "Final Delivery": "KAIKOURA",
+      "Quantity": "20",
+      "Package": "Case",
+      "Type": "CHILLED",
+      "Goods": "CASES OF FISH"
+    },
+    {
+      "driver": "JASON WHALE",
+      "load": "3",
+      "Uplift": "10:30",
+      "Offload": "11:30",
+      "Shipper": "TALLEYS BLENHEIM",
+      "Quantity": "32",
+      "Package": "Bag",
+      "Type": "CHILLED",
+      "Goods": "BAGS OF MUSSELS"
+    },
+    {
+      "driver": "STEVE BLAIR",
+      "load": "3",
+      "Uplift": "13:00",
+      "Offload": "16:00",
+      "Shipper": "TALLEYS MOTUEKA",
+      "Quantity": "18",
+      "Package": "Bag",
+      "Type": "CHILLED",
+      "Goods": "BAGS OF MUSSELS"
+    },
+    {
+      "driver": "JASON WHALE",
+      "load": "5",
+      "Uplift": "14:00",
+      "Offload": "15:30",
+      "Shipper": "TALLEYS BLENHEIM",
+      "Quantity": "32",
+      "Package": "Bag",
+      "Type": "CHILLED",
+      "Goods": "BAGS OF MUSSELS"
+    }
+  ],
+  "Dropoffs": [
+    {
+      "driver": "STEVE BLAIR",
+      "load": "1",
+      "Uplift": "05:00",
+      "Offload": "07:00",
+      "Shipper": "TALLEYS MOTUEKA",
+      "Quantity": "40",
+      "Package": "Case",
+      "Type": "CHILLED",
+      "Goods": "CASES OF ICE"
+    }
+  ]
+}
