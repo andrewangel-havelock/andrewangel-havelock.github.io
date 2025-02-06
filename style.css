@@ -257,7 +257,7 @@ tr td:last-child {
 
 /* Media Queries */
 @media (max-width: 640px) {
-    body {
+    html, body {
         padding: 10px;
         overflow-x: hidden !important; 
         max-width: 100% !important;
