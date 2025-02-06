@@ -92,18 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             "Date": "2/6/2025",
-            "driver": "KATIE SHEN",
-            "load": "7",
-            "Uplift": "16:00",
-            "Offload": "16:30",
-            "Shipper": "TALLEYS TAIWAN",
-            "Quantity": "1",
-            "Package": "Bag",
-            "Type": "CHILLED",
-            "Goods": "BAGS OF DICKS"
-        },
-        {
-            "Date": "2/6/2025",
             "driver": "STEVE BLAIR",
             "load": "2",
             "Uplift": "07:00",
