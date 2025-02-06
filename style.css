@@ -259,8 +259,8 @@ tr td:last-child {
 @media (max-width: 640px) {
     body {
         padding: 10px;
-        overflow-x: hidden; 
-
+        overflow-x: hidden !important; 
+        max-width: 100% !important;
     }
 
   .requirements-container {
