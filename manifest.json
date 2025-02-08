@@ -2,17 +2,25 @@
   "name": "Hive",
   "short_name": "Hive",
   "start_url": "/",
-  "display": "standalone", // Makes it feel like a native app
-  "theme_color": "#007bff", // Example color
-  "background_color": "#ffffff",
+  "display": "standalone",
   "icons": [
     {
-      "src": "icon-192x192.png",
+      "src": "/icons/icon-192x192.svg",  // SVG icon
+      "sizes": "192x192",
+      "type": "image/svg+xml"  // Important: Specify the correct type
+    },
+    {
+      "src": "/icons/icon-512x512.svg",  // SVG icon
+      "sizes": "512x512",
+      "type": "image/svg+xml"  // Important: Specify the correct type
+    },
+        {
+      "src": "/icons/icon-192x192.png",  // Fallback PNG if needed
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icon-512x512.png",
+      "src": "/icons/icon-512x512.png", // Fallback PNG if needed
       "sizes": "512x512",
       "type": "image/png"
     }
