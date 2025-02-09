@@ -325,3 +325,12 @@ if ('serviceWorker' in navigator) {
       });
   });
 };
+
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("open");
+
+  // Also toggle the overlay
+  const overlay = document.getElementById("overlay");
+  overlay.classList.toggle("open");
+}
