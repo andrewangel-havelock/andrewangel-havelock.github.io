@@ -14,6 +14,25 @@
       <img class="logo" src="talleys-logo.svg" alt="Talley's Logo">      
     </header>
 
+    <div id="menu-button" onclick="toggleMenu()">☰</div>
+
+    <div id="menu">
+      <div id="logo">
+        <img src="talleys-logo.svg" alt="Logo" style="max-width: 60%; max-height: 60%;">
+      </div>
+
+      <div class="menu-items">
+        <div class="menu-item"><img class="menu-icon" src="placeholder.svg" alt="Home Icon">Home</div>
+        <div class="menu-item"><img class="menu-icon" src="placeholder.svg" alt="Home Icon">Havelock Grading</div>
+        <div class="menu-item"><img class="menu-icon" src="placeholder.svg" alt="Home Icon">Chiller Count</div>
+      </div>
+      <div id="bottom-items">     
+        <div class="menu-item"><img class="menu-icon" src="placeholder.svg" alt="Home Icon">Settings</div>
+        <div class="menu-item" id="last-item"><img class="menu-icon" src="placeholder.svg" alt="Home Icon">Support</div>
+        <div class="menu-item" id="login"><img class="menu-icon" src="placeholder.svg" alt="Home Icon">Login</div>
+      </div>
+    </div>
+
     <section class="focus-harvest">
       <div class="grading-focus">
         <h2>Havelock Grading</h2>
@@ -76,6 +95,6 @@
       
   </div>
 
-  <script src="app.js"></script>
+  <div id="overlay"></div> <script src="app.js"></script>
 </body>
 </html>
